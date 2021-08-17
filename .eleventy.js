@@ -27,6 +27,9 @@ module.exports = function (eleventyConfig) {
     // copy the images folder
     eleventyConfig.addPassthroughCopy("src/images");
 
+    // copy from src/_includes/favicons to the root
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." })
+
     // charts plugin
     eleventyConfig.addPlugin(codeblocks([charts]));
 
