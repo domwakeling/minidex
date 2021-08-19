@@ -34,7 +34,7 @@ module.exports = async () => {
         },
         "encoding": {
             "x": { "field": "date", "type": "temporal", "title": "Date", "axis": { "format": "%d %b %y" } },
-            "y": { "field": "dex", "type": "quantitative", "title": "Minidex" }
+            "y": { "field": "dex", "type": "quantitative", "title": "MINIdex" }
         }
     }
 

@@ -28,8 +28,14 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images");
 
     // copy from src/_includes/favicons to the root
-    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." })
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." });
 
+    // add a new shortcode to return a copyright period string
+    eleventyConfig.addNunjucksShortcode("copyrightString", () => {
+        const year = new Date().getFullYear();
+        return "2021" + ( year === 2021 ? "" : "&mdash;" + year );
+    });
+    
     // charts plugin
     eleventyConfig.addPlugin(codeblocks([charts]));
 
