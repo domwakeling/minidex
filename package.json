@@ -14,14 +14,14 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "clean-css": "^5.1.5",
-    "dart-sass": "^1.25.0",
-    "js-beautify": "^1.14.0"
+    "clean-css": "^5.2.2",
+    "js-beautify": "^1.14.0",
+    "sass": "^1.43.4"
   },
   "dependencies": {
     "@code-blocks/charts": "^0.1.9",
     "@code-blocks/eleventy-plugin": "^0.1.8",
-    "axios": "^0.21.1",
+    "axios": "^0.24.0",
     "dotenv": "^10.0.0"
   }
 }
